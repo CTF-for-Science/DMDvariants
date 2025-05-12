@@ -1,0 +1,21 @@
+dataset:
+  name: PDE_KS
+  pair_id:
+  # - 1
+  # - 2
+  # - 3
+  # - 4
+  # - 5
+  # - 6
+  - 7
+  - 8
+  # - 9
+model:
+  delay: 2
+  eig_constraints:
+  - stable
+  method: bagopt
+  name: DMD
+  rank: 25
+  seed: 0
+  parametric: partitioned

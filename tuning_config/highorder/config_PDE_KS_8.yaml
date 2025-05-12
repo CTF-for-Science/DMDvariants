@@ -1,0 +1,23 @@
+dataset:
+  name: PDE_KS
+  pair_id:
+  - 8
+hyperparameters:
+  parametric:
+    choices:
+    - monolithic
+    - partitioned
+    type: choice
+  rank:
+    lower_bound: 10
+    type: randint
+    upper_bound: 50
+  delay:
+    type: choice
+    choices: [10, 20, 30, 40, 50]
+model:
+  method: highorder
+  n_trials: 20
+  name: DMD_highorder
+  seed: 0
+  train_split: 0.75
