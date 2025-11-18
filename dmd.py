@@ -122,6 +122,8 @@ class DMD4CTF:
 
         # Set the DMD options based on the method
         self.delay = config['model']['delay'] if 'delay' in config['model'] else None
+        if self.delay == 0: # If delay is set to 0, treat as no delay
+            self.delay = None
         self.num_trials = config['model']['num_trials'] if 'num_trials' in config['model'] else 0
         self.eig_constraints = {*config['model']['eig_constraints']} if 'eig_constraints' in config['model'] else None
 
