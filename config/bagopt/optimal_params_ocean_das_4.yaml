@@ -1,0 +1,13 @@
+dataset:
+  name: ocean_das
+  pair_id:
+  - 4
+model:
+  delay: 0
+  eig_constraints:
+  - stable
+  method: bagopt
+  name: DMD_bagopt
+  rank: 100
+  scaler: minmax
+  seed: 0
