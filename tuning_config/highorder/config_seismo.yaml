@@ -1,0 +1,31 @@
+dataset:
+  name: seismo
+  pair_id:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+hyperparameters:
+  parametric:
+    choices:
+    - monolithic
+    - partitioned
+    type: choice
+  rank:
+    lower_bound: 30
+    type: randint
+    upper_bound: 200
+  delay:
+    type: choice
+    choices: [5, 10, 20, 25, 30, 50]
+model:
+  method: highorder
+  n_trials: 20
+  name: DMD_highorder
+  seed: 0
+  train_split: 0.75

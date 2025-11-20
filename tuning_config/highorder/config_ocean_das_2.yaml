@@ -1,0 +1,17 @@
+dataset:
+  name: ocean_das
+  pair_id:
+  - 2
+hyperparameters:
+  rank:
+    type: choice
+    choices: [20, 40, 50, 70, 80, 100, 120, 130, 150]
+  delay:
+    type: choice
+    choices: [10, 20, 25, 30, 50]
+model:
+  method: highorder
+  n_trials: 50
+  name: DMD_highorder
+  seed: 0
+  train_split: 0.75

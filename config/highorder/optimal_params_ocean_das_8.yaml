@@ -1,0 +1,11 @@
+dataset:
+  name: ocean_das
+  pair_id:
+  - 8
+model:
+  delay: 20
+  method: highorder
+  name: DMD_highorder
+  parametric: monolithic
+  rank: 20
+  seed: 0
